@@ -31,7 +31,7 @@ gulp.task('fonts', function(){
 });
 
 gulp.task('images', function(){
-    return gulp.src('src/theme/images/*/*')
+    return gulp.src('src/theme/images/**/*')
         .pipe(gulp.dest('dist/images/'))
 });
 
