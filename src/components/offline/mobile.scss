@@ -2,9 +2,17 @@
   @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
   .wrapper {
-  background-color: linear-gradient(to top, #000, #ff6a3a);
+
+  background: #ff6a3a; /* Old browsers */
+  background: -moz-linear-gradient(top,  #ff6a3a 0%, #000000 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #ff6a3a 0%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #ff6a3a 0%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff6a3a', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+
+
 
   padding: 0 42px 49px 42px;
+  height: 100%;
 }
 
   header {
@@ -32,7 +40,7 @@
     border-radius: 47px;
     padding-left: 103px;
     line-height: 94px;
-    width: 555px;
+    width: px(555);
   }
 
   .menu--button {
