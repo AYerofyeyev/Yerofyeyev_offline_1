@@ -1,22 +1,40 @@
 & {
   @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
-  .wrapper {
-
-  background: #ff6a3a; /* Old browsers */
-  background: -moz-linear-gradient(top,  #ff6a3a 0%, #000000 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top,  #ff6a3a 0%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom,  #ff6a3a 0%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  .wrapper::before {
+  background: $color1; /* Old browsers */
+  background: -moz-linear-gradient(top,  $color1 0%, $color0 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  $color1 0%,$color0 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  $color1 0%,$color0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff6a3a', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+  content: '';
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
 
-
-
-  padding: 0 42px 49px 42px;
+.wrapper {
+  background: url('../images/Background.png') no-repeat 0 0 transparent;
+  position: relative;
+  padding: px(220) px(42) px(80);
   height: 100%;
 }
 
   header {
-    height: 694px;
+    height: px(474);
+    text-align: center;
+  }
+
+  .logo--link {
+    display: inline-block;
+  }
+
+  .logo {
+    display: inline-block;
   }
 
   nav {
@@ -31,34 +49,41 @@
   input {
     color: rgba(255, 255, 255, 0.5);
     font-family: Montserrat;
-    font-size: 22px;
+    font-size: px(22);
     font-weight: 400;
     text-align: left;
     text-decoration: none;
     display: inline-block;
     background-color:  rgba(255, 255, 255, 0.1);
-    border-radius: 47px;
-    padding-left: 103px;
-    line-height: 94px;
+    border-radius: px(47);
+    line-height: px(94);
     width: px(555);
+  }
+
+  .type {
+    padding-left: px(103);
   }
 
   .menu--button {
     text-align: center;
     font-weight: 700;
-    background: #f96332;
+    background: $color2;
+  }
+
+  footer {
+    width: 100%;
   }
 
   .footer--link {
     display: inline-block;
     float: left;
-    margin-top: 47px;
+    margin-top: px(47);
     color: rgba(255, 255, 255, .5);
     font-family: 'Montserrat', sans-serif;
-    font-size: 19px;
+    font-size: px(19);
   }
 
-  .footer--link--help {
+  .help {
     float: right;
   }
 }
