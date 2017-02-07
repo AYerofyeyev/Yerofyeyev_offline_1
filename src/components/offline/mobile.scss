@@ -31,7 +31,7 @@
 
   .logo--link {
     display: inline-block;
-    background: url('../images/logo--phone--portrait.png') no-repeat 0 0 transparent;
+    background: url('../images/logo.png') no-repeat 0 0 transparent;
     background-size: cover;
     height: px(206);
     width: px(191);
@@ -60,8 +60,14 @@
     width: px(555);
   }
 
-  .type {
+  .type--username {
     padding-left: px(103);
+    background: url('../images/icon--username.png') no-repeat 0 0 transparent;
+  }
+
+  .type--password {
+    padding-left: px(103);
+    background: url('../images/icon--password.png') no-repeat 0 0 transparent;
   }
 
   .menu--button {
