@@ -18,7 +18,7 @@
 }
 
 .wrapper {
-  background: url('../images/Background.png') no-repeat 0 0 transparent;
+  background: url('../images/background--phone--portrait.png') no-repeat 0 0 transparent;
   position: relative;
   padding: px(220) px(42) px(80);
   height: 100%;
@@ -31,10 +31,10 @@
 
   .logo--link {
     display: inline-block;
-  }
-
-  .logo {
-    display: inline-block;
+    background: url('../images/logo--phone--portrait.png') no-repeat 0 0 transparent;
+    background-size: cover;
+    height: px(206);
+    width: px(191);
   }
 
   nav {
