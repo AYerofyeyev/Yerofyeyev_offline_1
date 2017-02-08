@@ -15,14 +15,16 @@
   top: 0;
   width: 100%;
   z-index: -1;
-}
+  }
 
-.wrapper {
-  background: url('../images/background--phone--portrait.png') no-repeat 0 0 transparent;
-  position: relative;
-  padding: px(220) px(42) px(80);
-  height: 100%;
-}
+  .wrapper {
+    background: url('../images/background--phone--portrait.png') no-repeat 0 0 transparent;
+    background-size: cover;
+    position: relative;
+    padding: 20% 0 10%;
+    height: 100%;
+    text-align: center;
+  }
 
   header {
     height: px(474);
@@ -41,14 +43,13 @@
     text-align: center;
   }
 
-  nav
   form {
     margin: 0 auto;
   }
 
   input {
     color: rgba(255, 255, 255, 0.5);
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-size: px(22);
     font-weight: 400;
     text-align: left;
@@ -56,28 +57,42 @@
     display: inline-block;
     background-color:  rgba(255, 255, 255, 0.1);
     border-radius: px(47);
+    border: 0;
+    outline: none;
     line-height: px(94);
     width: px(555);
   }
 
   .type--username {
     padding-left: px(103);
-    background: url('../images/icon--username.png') no-repeat 0 0 transparent;
+    background: url('../images/icon--username.png') no-repeat px(36) px(29) transparent,  rgba(255, 255, 255, 0.1);
+    background-size: px(38) px(38);
+    font-family: 'Montserrat', sans-serif;
   }
 
   .type--password {
+    margin-top: px(26);
     padding-left: px(103);
-    background: url('../images/icon--password.png') no-repeat 0 0 transparent;
+    background: url('../images/icon--password.png') no-repeat px(38) px(23) transparent,  rgba(255, 255, 255, 0.1);
+    background-size: px(34) px(44);
+    font-family: 'Montserrat', sans-serif;
   }
 
   .menu--button {
+    margin-top: px(25);
     text-align: center;
     font-weight: 700;
     background: $color2;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: px(22);
+    font-weight: 700;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
   }
 
   footer {
-    width: 100%;
+    display: inline-block;
+    width: px(555);
   }
 
   .footer--link {
